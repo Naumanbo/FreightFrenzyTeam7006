@@ -36,6 +36,10 @@ public class Hardware {
         frontLeftMotor  = hardwareMap.get(DcMotor.class, "frontLeftMotor");
         backRightMotor  = hardwareMap.get(DcMotor.class, "backRightMotor");
         backLeftMotor   = hardwareMap.get(DcMotor.class, "backLeftMotor");
+        rightCollect    = hardwareMap.get(DcMotor.class, "rightCollect");
+        leftCollect     = hardwareMap.get(DcMotor.class, "leftCollect");
+        carouselMotor   = hardwareMap.get(DcMotor.class, "carousel");
+        cascadingMotor  = hardwareMap.get(DcMotor.class, "cascadingSlide");
 
         conveyorServo   = hardwareMap.get(Servo.class, "conveyorServo");
 
