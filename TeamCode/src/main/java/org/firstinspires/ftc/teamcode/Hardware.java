@@ -25,21 +25,26 @@ public class Hardware {
 
     public ElapsedTime runtime     = new ElapsedTime();
 
+    HardwareMap hwMap = null;
+    public Hardware() {
+
+    }
+
     public Hardware(HardwareMap hwMap) {
         initialize(hwMap);
     }
 
-    private void initialize(HardwareMap hwMap) {
-        hardwareMap     = hwMap;
+    public void initialize(HardwareMap ahwMap) {
+        hwMap           = ahwMap;
         // Connect motors NOTE: The name of the motors on FTC APP must be the same as this to identify the motors correctly.
-        frontRightMotor = hardwareMap.get(DcMotor.class, "frontRightMotor");
-        frontLeftMotor  = hardwareMap.get(DcMotor.class, "frontLeftMotor");
-        backRightMotor  = hardwareMap.get(DcMotor.class, "backRightMotor");
-        backLeftMotor   = hardwareMap.get(DcMotor.class, "backLeftMotor");
-        rightCollect    = hardwareMap.get(DcMotor.class, "rightCollect");
-        leftCollect     = hardwareMap.get(DcMotor.class, "leftCollect");
-        carouselMotor   = hardwareMap.get(DcMotor.class, "carousel");
-        cascadingMotor  = hardwareMap.get(DcMotor.class, "cascadingSlide");
+        frontRightMotor = hwMap.get(DcMotor.class, "fr");
+        frontLeftMotor  = hwMap.get(DcMotor.class, "fl");
+        backRightMotor  = hwMap.get(DcMotor.class, "br");
+        backLeftMotor   = hwMap.get(DcMotor.class, "bl");
+        rightCollect    = hwMap.get(DcMotor.class, "rc");
+        leftCollect     = hwMap.get(DcMotor.class, "lc");
+        carouselMotor   = hwMap.get(DcMotor.class, "ca");
+        cascadingMotor  = hwMap.get(DcMotor.class, "cs");
 
         conveyorServo   = hardwareMap.get(Servo.class, "conveyorServo");
 
@@ -91,6 +96,10 @@ public class Hardware {
         cascadingMotor.setPower(0);
         rightCollect.setPower(0);
         leftCollect.setPower(0);
+
+    }
+
+    public void init(HardwareMap hardwareMap) {
 
     }
 }
