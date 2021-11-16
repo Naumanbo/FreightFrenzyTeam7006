@@ -1,11 +1,11 @@
 package org.firstinspires.ftc.teamcode;
 
 import com.qualcomm.robotcore.hardware.DcMotor;
-import com.qualcomm.robotcore.hardware.HardwareMap;
 import com.qualcomm.robotcore.hardware.Servo;
-import com.qualcomm.robotcore.util.ElapsedTime;
+import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 
-public class Hardware {
+
+public class HardwareMap {
     // Create Motors
     public DcMotor frontRightMotor  = null;
     public DcMotor backRightMotor   = null;
@@ -21,20 +21,18 @@ public class Hardware {
     public Servo conveyorServo     = null;
 
     // Additional Variables
-    HardwareMap hardwareMap        = null;
+    com.qualcomm.robotcore.hardware.HardwareMap hardwareMap        = null;
 
-    public ElapsedTime runtime     = new ElapsedTime();
 
-    HardwareMap hwMap = null;
-    public Hardware() {
 
-    }
+    com.qualcomm.robotcore.hardware.HardwareMap hwMap = null;
 
-    public Hardware(HardwareMap hwMap) {
+
+    public HardwareMap(com.qualcomm.robotcore.hardware.HardwareMap hwMap) {
         initialize(hwMap);
     }
 
-    public void initialize(HardwareMap ahwMap) {
+    public void initialize(com.qualcomm.robotcore.hardware.HardwareMap ahwMap) {
         hwMap           = ahwMap;
         // Connect motors NOTE: The name of the motors on FTC APP must be the same as this to identify the motors correctly.
         frontRightMotor = hwMap.get(DcMotor.class, "fr");
@@ -99,7 +97,4 @@ public class Hardware {
 
     }
 
-    public void init(HardwareMap hardwareMap) {
-
-    }
 }

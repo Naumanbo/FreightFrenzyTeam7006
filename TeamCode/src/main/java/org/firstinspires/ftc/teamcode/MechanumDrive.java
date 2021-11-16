@@ -1,25 +1,22 @@
 package org.firstinspires.ftc.teamcode;
+
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.Gamepad;
-import com.qualcomm.robotcore.hardware.HardwareMap;
-import com.qualcomm.robotcore.util.Range;
-import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 
-@com.qualcomm.robotcore.eventloop.opmode.TeleOp(name="TeleOpNauman",
-        group="Pushbot")
-
-
+@TeleOp
 
 public class MechanumDrive extends LinearOpMode {
-    Hardware robot = new Hardware();
 
-    double drive;
-    double strafe;
-    double spin;
-    double intake;
-    double lift;
-    double push;
+
+    public double drive;
+    public double strafe;
+    public double spin;
+    public double intake;
+    public double lift;
+    public double push;
+
+    HardwareMap robot = new HardwareMap(hardwareMap);
 
     @Override
     public void runOpMode() throws InterruptedException {
