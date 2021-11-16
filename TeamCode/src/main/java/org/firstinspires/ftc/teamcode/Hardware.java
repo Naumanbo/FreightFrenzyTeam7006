@@ -96,10 +96,6 @@ public class Hardware {
         cascadingMotor.setPower(0);
         rightCollect.setPower(0);
         leftCollect.setPower(0);
-
     }
 
-    public void init(HardwareMap hardwareMap) {
-
-    }
 }
