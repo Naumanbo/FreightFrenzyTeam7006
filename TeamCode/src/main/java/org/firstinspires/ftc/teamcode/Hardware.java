@@ -7,14 +7,14 @@ import com.qualcomm.robotcore.util.ElapsedTime;
 
 public class Hardware {
     // Create Motors
-    public DcMotor frontRightMotor  = null;
-    public DcMotor backRightMotor   = null;
-    public DcMotor frontLeftMotor   = null;
-    public DcMotor backLeftMotor    = null;
-    public DcMotor rightCollect     = null;
-    public DcMotor leftCollect      = null;
-    public DcMotor carouselMotor    = null;
-    public DcMotor cascadingMotor   = null;
+    /* public DcMotor frontRightMotor  = null;
+    public DcMotor backRightMotor      = null;
+    public DcMotor frontLeftMotor      = null;
+    public DcMotor backLeftMotor       = null;
+    public DcMotor rightCollect        = null;
+    public DcMotor leftCollect         = null;
+    public DcMotor carouselMotor       = null;
+    public DcMotor cascadingMotor      = null;
 
     // Create Servos
 
@@ -97,5 +97,7 @@ public class Hardware {
         rightCollect.setPower(0);
         leftCollect.setPower(0);
     }
+
+     */
 
 }
