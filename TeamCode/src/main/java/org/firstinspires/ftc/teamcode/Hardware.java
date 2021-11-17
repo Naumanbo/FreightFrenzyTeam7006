@@ -1,38 +1,40 @@
 package org.firstinspires.ftc.teamcode;
 
 import com.qualcomm.robotcore.hardware.DcMotor;
+import com.qualcomm.robotcore.hardware.HardwareMap;
 import com.qualcomm.robotcore.hardware.Servo;
-import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
+import com.qualcomm.robotcore.util.ElapsedTime;
 
-
-public class HardwareMap {
+public class Hardware {
     // Create Motors
-    public DcMotor frontRightMotor  = null;
-    public DcMotor backRightMotor   = null;
-    public DcMotor frontLeftMotor   = null;
-    public DcMotor backLeftMotor    = null;
-    public DcMotor rightCollect     = null;
-    public DcMotor leftCollect      = null;
-    public DcMotor carouselMotor    = null;
-    public DcMotor cascadingMotor   = null;
+    /* public DcMotor frontRightMotor  = null;
+    public DcMotor backRightMotor      = null;
+    public DcMotor frontLeftMotor      = null;
+    public DcMotor backLeftMotor       = null;
+    public DcMotor rightCollect        = null;
+    public DcMotor leftCollect         = null;
+    public DcMotor carouselMotor       = null;
+    public DcMotor cascadingMotor      = null;
 
     // Create Servos
 
     public Servo conveyorServo     = null;
 
     // Additional Variables
-    com.qualcomm.robotcore.hardware.HardwareMap hardwareMap        = null;
+    HardwareMap hardwareMap        = null;
 
+    public ElapsedTime runtime     = new ElapsedTime();
 
+    HardwareMap hwMap = null;
+    public Hardware() {
 
-    com.qualcomm.robotcore.hardware.HardwareMap hwMap = null;
+    }
 
-
-    public HardwareMap(com.qualcomm.robotcore.hardware.HardwareMap hwMap) {
+    public Hardware(HardwareMap hwMap) {
         initialize(hwMap);
     }
 
-    public void initialize(com.qualcomm.robotcore.hardware.HardwareMap ahwMap) {
+    public void initialize(HardwareMap ahwMap) {
         hwMap           = ahwMap;
         // Connect motors NOTE: The name of the motors on FTC APP must be the same as this to identify the motors correctly.
         frontRightMotor = hwMap.get(DcMotor.class, "fr");
@@ -94,7 +96,8 @@ public class HardwareMap {
         cascadingMotor.setPower(0);
         rightCollect.setPower(0);
         leftCollect.setPower(0);
-
     }
+
+     */
 
 }
