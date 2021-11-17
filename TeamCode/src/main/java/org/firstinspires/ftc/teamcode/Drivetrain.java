@@ -74,7 +74,7 @@ public class Drivetrain extends OpMode {
         FRMotor.setPower(pivot + (-vertical + horizontal));
         BRMotor.setPower(pivot + (-vertical - horizontal));
         FLMotor.setPower(pivot + (-vertical - horizontal));
-        FRMotor.setPower(pivot + (-vertical + horizontal));
+        BLMotor.setPower(pivot + (-vertical + horizontal));
         RCMotor.setPower(collect);
         LCMotor.setPower(-collect);
         if (gamepad1.a)
